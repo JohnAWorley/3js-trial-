@@ -55,7 +55,7 @@ const boxColor = (state = [
 ], action) => {
     switch (action.type) {
         case 'SET_COLOR':
-            return action.payload; // need .data because we had nested data, duh.
+            return action.payload.data; // need .data because we had nested data, duh.
         default:
             return state;
     }

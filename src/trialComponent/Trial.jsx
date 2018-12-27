@@ -31,6 +31,7 @@ class MoveToReact extends Component {
         console.log('dispatching state');
         console.log(this.state.color);
         this.props.dispatch({ type: 'GET_COLOR' });
+       console.log();
        
         
         
@@ -42,7 +43,7 @@ class MoveToReact extends Component {
         
         for (let i = 0; i < this.props.reduxState.boxColor.length; i++) {
             const element = this.props.reduxState.boxColor[i];
-            console.log(element.color);
+            console.log(element.color , `box color at i`);
             
         
         
